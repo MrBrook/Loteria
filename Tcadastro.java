@@ -2,7 +2,6 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-
 /**
  * Created by lucas on 14/05/17.
  */
@@ -22,8 +21,7 @@ public class Tcadastro extends JFrame {
     private JTextField texDez4;
     private JTextField texDez5;
     private JTextField texDez6;
-
-
+    
     public Tcadastro(){
 
         painel = new JPanel();
@@ -86,7 +84,6 @@ public class Tcadastro extends JFrame {
                 validar();
             }
         } );
-
     }
 
     public void validar(){
@@ -108,8 +105,8 @@ public class Tcadastro extends JFrame {
                 teste.add(Integer.parseInt(d5));
                 teste.add(Integer.parseInt(d6));
 
-                Jogos jogo;
-                jogo = new Jogos();
+                Jogos jogo = new Jogos();
+           
                 if(jogo.addJogo(teste)) {
                     JOptionPane.showMessageDialog(null, "Jogo Cadastrado" );
                     tela.setNjogos();
@@ -122,14 +119,12 @@ public class Tcadastro extends JFrame {
         }else{
             JOptionPane.showMessageDialog(null, "Jogo Inválido!!" );
         }
-
+        
         texDez1.setText( "" );
         texDez2.setText( "" );
         texDez3.setText( "" );
         texDez4.setText( "" );
         texDez5.setText( "" );
         texDez6.setText( "" );
-
     }
-
 }
