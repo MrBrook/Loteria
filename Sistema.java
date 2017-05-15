@@ -14,7 +14,7 @@ public class Sistema {
 
     public void vereficaGanhadores(){
 
-        int[] teste = new int[60];
+        int[] teste = new int[61];
         int cont = 0;
         ArrayList<Integer> jogo1 = new ArrayList <Integer>(  );
 
